@@ -10,12 +10,20 @@
 		5B99DF1B237489DC00F7ECCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF1A237489DC00F7ECCF /* AppDelegate.swift */; };
 		5B99DF1D237489DC00F7ECCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF1C237489DC00F7ECCF /* SceneDelegate.swift */; };
 		5B99DF20237489DC00F7ECCF /* OMDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF1E237489DC00F7ECCF /* OMDB.xcdatamodeld */; };
-		5B99DF22237489DC00F7ECCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF21237489DC00F7ECCF /* ContentView.swift */; };
 		5B99DF24237489DE00F7ECCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B99DF23237489DE00F7ECCF /* Assets.xcassets */; };
 		5B99DF27237489DE00F7ECCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B99DF26237489DE00F7ECCF /* Preview Assets.xcassets */; };
-		5B99DF2A237489DE00F7ECCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B99DF28237489DE00F7ECCF /* LaunchScreen.storyboard */; };
 		5B99DF35237489DE00F7ECCF /* OMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF34237489DE00F7ECCF /* OMDBTests.swift */; };
 		5B99DF40237489DE00F7ECCF /* OMDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF3F237489DE00F7ECCF /* OMDBUITests.swift */; };
+		5B99DF4F23748AE500F7ECCF /* OMDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF4E23748AE500F7ECCF /* OMDBModel.swift */; };
+		5B99DF5C23748F6E00F7ECCF /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF5B23748F6E00F7ECCF /* CoreDataStack.swift */; };
+		5B99DF5E2374917900F7ECCF /* OMDBSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF5D2374917900F7ECCF /* OMDBSearchResult.swift */; };
+		5B99DF5F2374955D00F7ECCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B99DF28237489DE00F7ECCF /* LaunchScreen.storyboard */; };
+		5B99DF6323749A0E00F7ECCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B99DF6223749A0E00F7ECCF /* Main.storyboard */; };
+		5B99DF6623749E8400F7ECCF /* OMDBListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF6523749E8400F7ECCF /* OMDBListViewModel.swift */; };
+		5B99DF6A2374A38100F7ECCF /* OMDBCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF672374A38100F7ECCF /* OMDBCell.swift */; };
+		5B99DF6B2374A38100F7ECCF /* OMDBList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF682374A38100F7ECCF /* OMDBList.swift */; };
+		5B99DF6E2374A44800F7ECCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF6D2374A44800F7ECCF /* ContentView.swift */; };
+		5B99DF702374A58A00F7ECCF /* OMDBCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B99DF6F2374A58A00F7ECCF /* OMDBCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,6 @@
 		5B99DF1A237489DC00F7ECCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B99DF1C237489DC00F7ECCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B99DF1F237489DC00F7ECCF /* OMDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OMDB.xcdatamodel; sourceTree = "<group>"; };
-		5B99DF21237489DC00F7ECCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B99DF23237489DE00F7ECCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B99DF26237489DE00F7ECCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B99DF29237489DE00F7ECCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +58,15 @@
 		5B99DF3B237489DE00F7ECCF /* OMDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OMDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B99DF3F237489DE00F7ECCF /* OMDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBUITests.swift; sourceTree = "<group>"; };
 		5B99DF41237489DE00F7ECCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B99DF4E23748AE500F7ECCF /* OMDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBModel.swift; sourceTree = "<group>"; };
+		5B99DF5B23748F6E00F7ECCF /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5B99DF5D2374917900F7ECCF /* OMDBSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBSearchResult.swift; sourceTree = "<group>"; };
+		5B99DF6223749A0E00F7ECCF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5B99DF6523749E8400F7ECCF /* OMDBListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBListViewModel.swift; sourceTree = "<group>"; };
+		5B99DF672374A38100F7ECCF /* OMDBCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBCell.swift; sourceTree = "<group>"; };
+		5B99DF682374A38100F7ECCF /* OMDBList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBList.swift; sourceTree = "<group>"; };
+		5B99DF6D2374A44800F7ECCF /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B99DF6F2374A58A00F7ECCF /* OMDBCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMDBCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +117,12 @@
 		5B99DF19237489DC00F7ECCF /* OMDB */ = {
 			isa = PBXGroup;
 			children = (
-				5B99DF1A237489DC00F7ECCF /* AppDelegate.swift */,
-				5B99DF1C237489DC00F7ECCF /* SceneDelegate.swift */,
-				5B99DF21237489DC00F7ECCF /* ContentView.swift */,
-				5B99DF23237489DE00F7ECCF /* Assets.xcassets */,
-				5B99DF28237489DE00F7ECCF /* LaunchScreen.storyboard */,
-				5B99DF2B237489DE00F7ECCF /* Info.plist */,
-				5B99DF1E237489DC00F7ECCF /* OMDB.xcdatamodeld */,
+				5B99DF5A23748F3600F7ECCF /* app-settings */,
+				5B99DF5923748EF500F7ECCF /* app-local-storage */,
+				5B99DF5823748EE900F7ECCF /* app-utils */,
+				5B99DF5723748EC800F7ECCF /* app-ui */,
+				5B99DF5623748EAD00F7ECCF /* app-icons */,
+				5B99DF5023748CB500F7ECCF /* omdb-module */,
 				5B99DF25237489DE00F7ECCF /* Preview Content */,
 			);
 			path = OMDB;
@@ -137,6 +152,87 @@
 				5B99DF41237489DE00F7ECCF /* Info.plist */,
 			);
 			path = OMDBUITests;
+			sourceTree = "<group>";
+		};
+		5B99DF4D23748AB100F7ECCF /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF4E23748AE500F7ECCF /* OMDBModel.swift */,
+				5B99DF5D2374917900F7ECCF /* OMDBSearchResult.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		5B99DF5023748CB500F7ECCF /* omdb-module */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF6423749E3800F7ECCF /* viewModels */,
+				5B99DF5123748E6900F7ECCF /* views */,
+				5B99DF4D23748AB100F7ECCF /* entities */,
+			);
+			path = "omdb-module";
+			sourceTree = "<group>";
+		};
+		5B99DF5123748E6900F7ECCF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF672374A38100F7ECCF /* OMDBCell.swift */,
+				5B99DF6D2374A44800F7ECCF /* ContentView.swift */,
+				5B99DF682374A38100F7ECCF /* OMDBList.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5B99DF5623748EAD00F7ECCF /* app-icons */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF23237489DE00F7ECCF /* Assets.xcassets */,
+			);
+			path = "app-icons";
+			sourceTree = "<group>";
+		};
+		5B99DF5723748EC800F7ECCF /* app-ui */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF28237489DE00F7ECCF /* LaunchScreen.storyboard */,
+				5B99DF6223749A0E00F7ECCF /* Main.storyboard */,
+			);
+			path = "app-ui";
+			sourceTree = "<group>";
+		};
+		5B99DF5823748EE900F7ECCF /* app-utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "app-utils";
+			sourceTree = "<group>";
+		};
+		5B99DF5923748EF500F7ECCF /* app-local-storage */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF1E237489DC00F7ECCF /* OMDB.xcdatamodeld */,
+			);
+			path = "app-local-storage";
+			sourceTree = "<group>";
+		};
+		5B99DF5A23748F3600F7ECCF /* app-settings */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF5B23748F6E00F7ECCF /* CoreDataStack.swift */,
+				5B99DF1C237489DC00F7ECCF /* SceneDelegate.swift */,
+				5B99DF1A237489DC00F7ECCF /* AppDelegate.swift */,
+				5B99DF2B237489DE00F7ECCF /* Info.plist */,
+			);
+			path = "app-settings";
+			sourceTree = "<group>";
+		};
+		5B99DF6423749E3800F7ECCF /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5B99DF6523749E8400F7ECCF /* OMDBListViewModel.swift */,
+				5B99DF6F2374A58A00F7ECCF /* OMDBCellViewModel.swift */,
+			);
+			path = viewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B99DF2A237489DE00F7ECCF /* LaunchScreen.storyboard in Resources */,
+				5B99DF5F2374955D00F7ECCF /* LaunchScreen.storyboard in Resources */,
+				5B99DF6323749A0E00F7ECCF /* Main.storyboard in Resources */,
 				5B99DF27237489DE00F7ECCF /* Preview Assets.xcassets in Resources */,
 				5B99DF24237489DE00F7ECCF /* Assets.xcassets in Resources */,
 			);
@@ -270,10 +367,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B99DF4F23748AE500F7ECCF /* OMDBModel.swift in Sources */,
 				5B99DF20237489DC00F7ECCF /* OMDB.xcdatamodeld in Sources */,
+				5B99DF6623749E8400F7ECCF /* OMDBListViewModel.swift in Sources */,
 				5B99DF1B237489DC00F7ECCF /* AppDelegate.swift in Sources */,
-				5B99DF22237489DC00F7ECCF /* ContentView.swift in Sources */,
+				5B99DF6A2374A38100F7ECCF /* OMDBCell.swift in Sources */,
+				5B99DF6B2374A38100F7ECCF /* OMDBList.swift in Sources */,
+				5B99DF6E2374A44800F7ECCF /* ContentView.swift in Sources */,
+				5B99DF5C23748F6E00F7ECCF /* CoreDataStack.swift in Sources */,
 				5B99DF1D237489DC00F7ECCF /* SceneDelegate.swift in Sources */,
+				5B99DF702374A58A00F7ECCF /* OMDBCellViewModel.swift in Sources */,
+				5B99DF5E2374917900F7ECCF /* OMDBSearchResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +545,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OMDB/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = OMDB/Info.plist;
+				INFOPLIST_FILE = "OMDB/app-settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OMDB/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = OMDB/Info.plist;
+				INFOPLIST_FILE = "OMDB/app-settings/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

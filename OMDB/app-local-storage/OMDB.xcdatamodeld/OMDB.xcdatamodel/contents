@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="OMDBResponse" representedClassName="OMDBResponse" syncable="YES" codeGenerationType="class">
+        <attribute name="begins" optional="YES" attributeType="String"/>
+        <attribute name="imdbID" optional="YES" attributeType="String"/>
+        <attribute name="movie" optional="YES" attributeType="String"/>
+        <attribute name="poster" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="OMDBResult" representedClassName="OMDBResult" syncable="YES" codeGenerationType="class">
+        <attribute name="pageNo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="response" optional="YES" attributeType="String"/>
+        <attribute name="totalResults" optional="YES" attributeType="String"/>
+        <relationship name="search" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="OMDBResponse"/>
+    </entity>
+    <elements>
+        <element name="OMDBResponse" positionX="-63" positionY="-18" width="128" height="28"/>
+        <element name="OMDBResult" positionX="-54" positionY="36" width="128" height="103"/>
+    </elements>
+</model>
