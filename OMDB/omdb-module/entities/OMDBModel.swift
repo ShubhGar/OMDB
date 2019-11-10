@@ -10,10 +10,9 @@ import Foundation
 
 class OMDBModel:Codable, Identifiable{
     var title:String?
-    var begins:String?
+    var year:String?
     var imdbID:String?
     var type:String?
-    var movie:String?
     var poster:String?
     
     init() {
@@ -22,19 +21,17 @@ class OMDBModel:Codable, Identifiable{
     
     enum CodingKeys: String, CodingKey {
         case title = "Title"
-        case begins = "Begins"
+        case year = "Year"
         case imdbID = "imdbID"
         case type = "Type"
-        case movie = "movie"
         case poster = "Poster"
     }
     
     init(response:OMDBResponse) {
         self.title = response.title
-        self.begins = response.begins
+        self.year = response.year
         self.imdbID = response.imdbID
         self.type = response.type
-        self.movie = response.movie
         self.poster = response.poster
     }
     

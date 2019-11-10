@@ -12,32 +12,67 @@ import Foundation
 import SwiftUI
 import Combine
 
-public class OMDBListViewModel: ObservableObject {
-    public let objectWillChange = PassthroughSubject<OMDBListViewModel, Never>()
+protocol DataReciever {
+    func onSuccess()
+    func onError()
+}
+
+public class OMDBListViewModel {
+    private var delegate: DataReciever?
+    private var models: OMDBModels = OMDBModels()
     
-    var models: OMDBModels = OMDBModels() {
-        didSet {
-            objectWillChange.send(self)
-        }
+    private var totalCounts = 0
+    private var pageNo = 1
+    
+    func getModels()-> OMDBModels{
+        return models
     }
     
-    func shuffle() {
-        self.models = self.models.shuffled()
+    func getModelsCount()->Int{
+        return models.count
+    }
+    
+    func setDelegate(delegate: DataReciever){
+        self.delegate = delegate
+    }
+    
+    func getTotalCounts()->Int{
+        return self.totalCounts
+    }
+    
+    func getModelAtIndex(index: Int)-> OMDBModel{
+        if index < self.getModelsCount(){
+            return self.getModels()[index]
+        }
+        return OMDBModel()
+    }
+    
+    func increasePageNoByOne(){
+        self.pageNo += 1 
     }
     
     func load() {
-        guard let url = URL(string: "http://www.omdbapi.com/?s=Batman&page=1&apikey=eeefc96f") else { return }
+        guard let url = URL(string: String(format: OMDBURL, pageNo)) else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
-                guard let data = data else { return }
-                let result = try JSONDecoder().decode(OMDBSearchResult.self, from: data)
-                DispatchQueue.main.async {
-                    self.models = result.search ?? []
+                guard let data = data else {
+                    self.delegate?.onError()
+                    return
                 }
+                let result = try JSONDecoder().decode(OMDBSearchResult.self, from: data)
+                if self.pageNo == 1 {
+                    self.models = result.search ?? []
+                    self.totalCounts = Int(result.totalResults ?? "0") ?? 0
+                }
+                else{
+                    self.models.append(contentsOf: result.search ?? [])
+                }
+                self.delegate?.onSuccess()
             } catch {
                 print("Failed To decode: ", error)
+                self.delegate?.onError()
             }
-            }.resume()
+        }.resume()
     }
 }
 
