@@ -10,3 +10,4 @@ An OMDb iOS Client have:
 * Support Landscape and Portrait mode
 * support light and dark mode
 
+![alt text](/Users/shubhamgarg/Desktop/Screenshot\ 2019-11-10\ at\ 4.13.50\ PM.png

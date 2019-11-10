@@ -56,7 +56,7 @@
 		5B8FCEE02375D94D0061CA61 /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		5B8FCEE62377DEA00061CA61 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		5B8FCEE823781CF10061CA61 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		5B99DF17237489DC00F7ECCF /* OMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B99DF17237489DC00F7ECCF /* OMDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B99DF1A237489DC00F7ECCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B99DF1C237489DC00F7ECCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B99DF1F237489DC00F7ECCF /* OMDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OMDB.xcdatamodel; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		5B99DF18237489DC00F7ECCF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B99DF17237489DC00F7ECCF /* OMDB.app */,
+				5B99DF17237489DC00F7ECCF /* OMDb.app */,
 				5B99DF30237489DE00F7ECCF /* OMDBTests.xctest */,
 				5B99DF3B237489DE00F7ECCF /* OMDBUITests.xctest */,
 			);
@@ -275,7 +275,7 @@
 			);
 			name = OMDB;
 			productName = OMDB;
-			productReference = 5B99DF17237489DC00F7ECCF /* OMDB.app */;
+			productReference = 5B99DF17237489DC00F7ECCF /* OMDb.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5B99DF2F237489DE00F7ECCF /* OMDBTests */ = {
@@ -578,8 +578,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.OMDB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.OMDb;
+				PRODUCT_NAME = OMDb;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -597,8 +597,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.OMDB;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shubham.OMDb;
+				PRODUCT_NAME = OMDb;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
