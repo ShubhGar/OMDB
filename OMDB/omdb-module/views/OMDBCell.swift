@@ -14,13 +14,18 @@ struct OMDBCell : View {
     var cellViewModel: OMDBCellViewModel
     
     var body: some View {
-        VStack {
-            Image(uiImage: self.cellViewModel.getCachedImage())
-            Text(self.cellViewModel.getTitle())
-            Text(self.cellViewModel.getType())
-            Text(self.cellViewModel.getYear())
+        Group {
+            ScrollView {
+                VStack {
+                    Image(uiImage: self.cellViewModel.getCachedImage())
+                    Text(self.cellViewModel.getTitle())
+                    Text(self.cellViewModel.getType())
+                    Text(self.cellViewModel.getYear())
+                }
+                .padding()
+            }
         }
-        .padding()
+        
     }
 }
 
